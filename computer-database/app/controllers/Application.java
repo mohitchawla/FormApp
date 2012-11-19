@@ -26,7 +26,7 @@ public class Application extends Controller {
      * Handle default path requests, redirect to computers list
      */
     public static Result index() {
-        System.out.println("mohit");
+        System.out.println("ajay");
     	return GO_HOME;
     }
 
