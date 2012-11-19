@@ -1,0 +1,47 @@
+@(userForm: Form[User])
+
+@import helper._ 
+
+@main("Welcome to Forms Application") {
+	@helper.form(action = routes.SignUp.submit){
+			<fieldset>
+			<legend>Sign Up here..</legend>
+			
+				@inputText(
+					 userForm("fname"),
+					 '_label -> "First Name:",
+					 '_placeholder -> "First Name"
+				)
+				
+				@inputText(
+					 userForm("lname"),
+					 '_label -> "Last Name:"
+				)
+				
+				@inputText(
+					 userForm("email"),
+					 '_label -> "Email :"
+				)
+				
+				@inputText(
+					 userForm("userName"),
+					 '_label -> "User Name:"
+				)
+				
+				@inputPassword(
+					 userForm("password"),
+					 '_label -> "Password:"
+				)
+				
+				@inputPassword(
+					 userForm("cpassword"),
+					 '_label -> "Confirm Password:"
+				)
+				
+				<p class="buttons">
+					<input type="submit" value="Sign Up"/>
+					<a href="@routes.Application.index">Cancel</a>
+				</p>
+			</fieldset>
+	}
+}
