@@ -26,7 +26,8 @@ public class Application extends Controller {
      * Handle default path requests, redirect to computers list
      */
     public static Result index() {
-        return GO_HOME;
+        System.out.println("mohit");
+    	return GO_HOME;
     }
 
     /**
