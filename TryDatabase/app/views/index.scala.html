@@ -1,7 +1,9 @@
-@(message: String)
+@(list: List[Order])
 
-@main("Welcome to Play 2.0") {
-    
-    @play20.welcome(message, style = "Java")
-    
+@main("List Of Orders") {
+    <ul>
+    @for(Order <- list){
+    	<li>Order.title</li>
+    }
+    </ul>
 }
