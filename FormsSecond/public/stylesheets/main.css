@@ -1,0 +1,18 @@
+.page
+{
+	width: 100%;
+}
+.header
+{
+	background-color: red;
+	width: 100%;
+}
+.page-Header
+{
+	width: 1024px;
+	background-color: silver;;
+}
+.forms
+{
+	width: 1024px;
+}
